@@ -57,3 +57,9 @@ else:
 # Footer
 st.markdown("---")
 st.caption("Developed with ❤️ using Streamlit")
+# Replace this line
+st.success(f"💰 Predicted Salary for {years_exp} years of experience: ₹ {int(predicted_salary):,}")
+
+# With this
+st.success(f"💰 Predicted Salary for {round(years_exp, 2)} years of experience: ₹ {int(predicted_salary):,}")
+
