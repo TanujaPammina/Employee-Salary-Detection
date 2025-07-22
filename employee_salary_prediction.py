@@ -15,7 +15,7 @@ st.markdown("Predict salary based on years of experience using Linear Regression
 # Load dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r"C:\Users\tanuja\OneDrive\Desktop\employee salary\salary_data.csv")
+    data = pd.read_csv("salary_data.csv")
     return data
 
 data = load_data()
